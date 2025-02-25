@@ -1,0 +1,29 @@
+\ProvidesPackage{pkgs}
+
+\usepackage[norwegian]{babel}  % Språket som brukes for titler som innholdsfortegnelse etc.
+\usepackage[a4paper, total={6.5in, 9in}]{geometry} % Papirstørrelse, marginer
+\usepackage[utf8]{inputenc}    % Forsikrer UTF8 formatering (nyttig mtp norsk as)
+\usepackage[T1]{fontenc}       % UHHHH
+
+\usepackage{svg}        % Tillater å bruke svg-grafikk (logoen vår)
+\usepackage{amsmath}    % Formatering av matematiske symboler
+\usepackage{graphicx}   % Tillater å inkludere grafikk / bilder i dokumentet
+\usepackage[colorlinks=false]{hyperref} % Linker mellom referanser etc.
+\usepackage{fancyhdr}   % Formatering av header / footer
+\usepackage{tocloft}    % Formatering av table of contents
+\usepackage{glossaries} % Nyttig for definisjoner av begrep
+\usepackage{comment}    % Lar deg kommentere ut større deler tekst
+\usepackage{float}      % Tillater å fastsette location til grafikk / figurer
+\usepackage{titlepic}   % Tillater å inlkudere grafikk på tittelsiden
+\usepackage{enumerate}  % Brukes for å kunne endre på listeformatteringer
+
+% Legger til leading dots mellom seksjonstitler / paragrafer og sidetall
+\renewcommand{\cftdot}{.} % velg symbol
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % inkluder på både section og subsection
+
+% Fikser hvordan referanser til paragrafer ser ut 
+\renewcommand{\thesection}{\S\space\arabic{section}}
+\renewcommand{\thesubsection}{\S\space\arabic{section}-\arabic{subsection}}
+
+% Lager en glossary (begrepsdefinisjoner)
+\makeglossaries 

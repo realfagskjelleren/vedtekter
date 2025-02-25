@@ -1,0 +1,39 @@
+%    ___  ______ ___                    ____      __   __         
+%   / _ \/ __/ //_( )___   _  _____ ___/ / /____ / /__/ /____ ____
+%  / , _/ _// ,<  |/(_-<  | |/ / -_) _  / __/ -_)  '_/ __/ -_) __/
+% /_/|_/_/ /_/|_|  /___/  |___/\__/\_,_/\__/\__/_/\_\\__/\__/_/ 
+
+% Siste endring: 5. Februar 2025 - Tor Jacob Neple [redaksjonell]
+% Tidligere endringer:
+% * 2. Februar 2025 - Tor Jacob Neple, Vebjørn Nyvoll, Joakim Pettersen Vassbakk [redaksjonell]
+
+\documentclass[titlepage]{article} % Setter dokumenttype (std. formatering etc)
+
+\usepackage{pkgs} % Samlingspunkt for alle packages og egendefinerte commands - se også her for dokumentasjon
+
+\begin{document}
+
+\begin{titlepage}
+    \title{\huge{\textbf{Vedtekter for Realfagskjelleren}}}
+    \date{Sist revidert: 13.03.2024}
+    \titlepic{\includesvg[width=0.5\linewidth]{graphics/pidame.svg}}
+    \maketitle
+\end{titlepage}
+\clearpage
+\setcounter{page}{1}
+
+\tableofcontents
+\newpage
+
+\input{sections/01_organisasjonsnavn}
+\input{sections/02_organisasjon}
+\input{sections/03_medlemskap}
+\input{sections/04_generalforsamling}
+\input{sections/05_styret}
+\input{sections/06_oppløsning}
+\input{sections/07_sammenslutning}
+\input{sections/08_aeresordenen}
+\input{sections/09_riddere-av-pidamens-bord}
+\input{sections/x_definisjoner}
+
+\end{document}
